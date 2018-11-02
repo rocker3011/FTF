@@ -1,0 +1,5 @@
+oeis.org
+
+ try out brute force solutions before the contest end: it is very often that a contest contains at least one problem which allow brute force solution either because of genernous time limit or because of weak test data
+
+Templates
