@@ -18,16 +18,17 @@ int dist[MAX_N][MAX_M];
 int BFS (int x,int y,int dx,int dy,int n,int m){
     queue <node> q;
     memset(dist,0x3f3f3f3f,sizeof(dist));
+    dist[x][y]=0;
     while(!q.empty()){
         node v = q.front(); q.pop();
         if (v.x==dx && v.y==dy) return v.step;
-        if (dist[v.x][v.y] <= v.step) continue;
-        dist[v.x][v.y]=v.step;
+        
         for(int i=0;i<4;++i){
             int aux = movx[i] + v.x;
             int auy = movy[i] + v.y;
             if(aux<0 || aux>=n || auy<0 || auy>=m) continue;
             if (dist[aux][auy]<=v.step+1) continue;
+            dist[aux][auy]=v.step+1;
             q.push(node(aux,auy,v.step+1));
         }
     }
