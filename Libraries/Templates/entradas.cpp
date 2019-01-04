@@ -1,14 +1,19 @@
-//FAST INPUT cin,cout mega rapidos
+//MACROS
 
 #include <bits/stdc++.h>
 using namespace std;
 
-int main()
-{
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-    return 0;
-}
+typedef pair<int,int> PII;
+
+#define MAXN 1005
+#define F first
+#define S second
+#define pb push_back
+
+
+//FAST INPUT y OUTPUT
+ios_base::sync_with_stdio(false), cin.tie(0), cout.tie(0);
+
 
 //FAST INPUT enteros y caracteres
 
